@@ -26,7 +26,9 @@ void input_array(int n, int a[n])
   }
   void out_put(int sum)
   {
-    printf("the sum of numbers is %d\n",sum);
+    int i,n;
+   
+    printf("the sum of given numbers is %d\n",sum);
   }
   int main()
   {
