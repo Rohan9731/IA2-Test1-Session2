@@ -50,6 +50,7 @@ void output(int sum)
 int main()
 {
 	int x;
+  
 	x = input_size();
 	int a[x];
 	int total;

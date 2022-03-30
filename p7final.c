@@ -22,7 +22,8 @@ typedef struct _triangle Triangle;
 	 printf("the area of given triangle of height %.2f and base %.2f is %.2f\n",t.altitude,t.base,t.area);
 	 }
 	 int main(void)
-	 {Triangle x;
+	 {
+     Triangle x;
 	 x=input_triangle();
 	 find_area(&x);
 	 output(x);

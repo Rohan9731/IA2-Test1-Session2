@@ -30,6 +30,7 @@ return 2;
  int main()
  {
    int a,b,c,scalene;
+   
    a=input_side();
    b=input_side();
    c=input_side();

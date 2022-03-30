@@ -30,4 +30,5 @@
 			calculate(x,y,&z);
 			output(x,y,z);
 			return 0;
+      
 		}

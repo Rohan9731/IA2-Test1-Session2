@@ -22,7 +22,9 @@ int sum_composite(int n, int a[n])
 	for (i = 0; i < n; i++)
 	{
 		for (j = 1; j < n; j++)
-		
+
+
+
 			if (a[i] > a[j])
 			//continue;
 		
@@ -30,7 +32,8 @@ int sum_composite(int n, int a[n])
 }*/
 	for (i = 0; i < n; i++)
 	{
-		for (j = 1; j <= a[i]; j++)
+	
+    for (j = 1; j <= a[i]; j++)
 
 		{ 
           // if(a[i]<=j)

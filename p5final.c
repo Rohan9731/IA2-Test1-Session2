@@ -24,6 +24,7 @@ void output(int a, int b, int hcf)
 }
 int main()
 {
+  
 	int x, y, hcf;
 	x = input();
 	y = input();
