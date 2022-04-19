@@ -1,61 +1,44 @@
+/*   6.	Write a program to reverse a string.
+	   void input_string(char *a);
+	   char *str_reverse(char *a);
+	   void output(char *a,char *reversea);
+	   input:
+	   hello
+	   output:
+	   olleh*/
 #include <stdio.h>
-int input_size()
+void input_string(char *a)
 {
-	int x;
-	printf("enter the number\n");
-	scanf("%d", &x);
-	return x;
+	printf("enter the word\n");
+	scanf("%s", a);
 }
-void input_array(int n, int a[n])
+int str_reverse(char *a)
 {
-	printf("enter the elments \n");
-	int i;
-	for (i = 0; i < n; i++)
-	{
-		scanf("%d", &a[i]);
-	}
+	int wordcount = 0;
+	for (int i = 0; a[i] != '\0'; i++)
+	wordcount++;
+	
+	return wordcount;
 }
-int sum_composite(int n, int a[n])
+void output( char *a, int  reverse )
 {
-	int i, j = 1, sum = 0, count = 0, great = 0;
-
-	for (i = 0; i < n; i++)
-	{
-		for (j = 1; j < n; j++)
-		
-			if (a[i] > a[j])
-			//continue;
-		
-		great=a[i];
-	}
-	for (i = 0; i < n; i++)
-	{
-		for (j = 1; j < great; j++)
-
-		{ 
-      if(a[i]<=j)
-			  if (a[i] % j == 0)
-				count += 1;
-		}
-		if (count >=3){
-			sum = sum + a[i];
-		}
-	}
-	return sum;
-}
-void output(int sum)
-{
-	printf(" the sum  of composite numbers is %d", sum);
+  int i,j;
+	printf(" the given character is: ");
+	for (i = 0; a[i] != '\0'; i++)
+	
+	printf("%c ", a[i]);
+	
+	printf("\n the reverse of the given character is: ");
+     for (j= reverse-1; a[j] != '\0';j--)
+	 
+		 printf("%c ",a[j]);
 }
 int main()
 {
-	int x;
-  
-	x = input_size();
-	int a[x];
-	int total;
-	input_array(x, a);
-	total = sum_composite(x, a);
-	output(total);
+	char a[100];
+	input_string(a);
+	int  x;
+	x = str_reverse(a);
+	output(a,x);
 	return 0;
 }
